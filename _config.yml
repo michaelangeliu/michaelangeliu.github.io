@@ -12,9 +12,5 @@ github_username:  michaelangeliu
 facebook_username: michaelangeliu
 tumblr_username:  michaelangeliu
 
-# Collections
-collections: 
-- collection_quotes
-
 # Build settings
 markdown: kramdown
