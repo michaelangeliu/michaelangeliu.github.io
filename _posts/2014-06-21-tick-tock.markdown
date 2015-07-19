@@ -2,11 +2,11 @@
 layout: post
 title:  "Tick Tock"
 date:   2014-06-11 00:00:00
-categories: tumblr post 
+categories: post 
 ---
 Yesterday, I spent an hour or two looking for a book I read when I was younger. It was about two kids who are visited by a third one from the future. They end up time-traveling and saving the world as we know it. I don't really remember the rest of the plot, but the thing that has stuck with me through the years is a phrase in the book. I didn't end up finding the book, but I still think that it's a strange sentiment:
 
-**"The past is unchangeable. The future is unknowable. And the present never happens."**
+*"The past is unchangeable. The future is unknowable. And the present never happens."*
 
 In part, it refers to [Novikov's self-consistency principle](https://en.wikipedia.org/wiki/Novikov_self-consistency_principle). The past, no matter what you do, will stay in the past. Even if time-travel were possible, changes will ultimately right themselves. A popular analogy that I've heard is that the currents of the river won't change even if you throw in a pebble. This begs the question of "if you throw in something larger than a pebble, couldn't that change the course of the river?" It happens in the physical world. We dam up streams and reroute rivers. If the analogy were to hold, then couldn't a sufficiently important event being changed cause a change in the timeline. Like in [X-Men: Days of Future Past](https://en.wikipedia.org/wiki/X-Men:_Days_of_Future_Past) (there are probably better examples, but I saw the movie recently), where they go back in time to make sure they were never there hiding before the Sentinels come. I guess the question becomes how encompassing is this river of time? What is our scale and scope? It's like a different paradox I heard once about if a god is almighty, can this god create a rock so heavy that the god cannot lift it. In the moment, small things do make small changes, but who knows if things ultimately correct themselves? Is there a correct path?
 
