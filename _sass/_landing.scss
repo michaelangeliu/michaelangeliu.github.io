@@ -1,0 +1,53 @@
+.landing {
+    font-family: Helvetica;
+    .name {
+        text-align: center;
+        a {
+            font-size: 100px;
+            color: #828282;
+            &:hover, &:focus, &:visited, &:active {
+                text-decoration: none;
+                color: #828282;
+            }
+        }
+    }
+    .social-media-links {
+        ul {
+            list-style-type: none;
+            margin: 0;
+            text-align: center;
+            li {
+                display: inline;
+                padding: 5px;
+                a {
+                    &:hover, &:focus, &:visited, &:active {
+                        text-decoration: none;
+                    }
+                    svg {
+                        .svg {
+                            fill: #828282;
+                            transition: fill 0.5s;
+                        }
+                        &:hover {
+                            .svg-linkedin {
+                                fill: #0077b5;
+                            }
+                            .svg-github {
+                                fill: #4183c4;
+                            }
+                            .svg-facebook {
+                                fill: #3b5998
+                            }
+                            .svg-twitter {
+                                fill: #55acee;
+                            }
+                            .svg-tumblr {
+                                fill: #35465c;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
