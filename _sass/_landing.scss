@@ -1,16 +1,26 @@
+html {
+}
+
 body {
     background-image: url('/images/background.png');
 }
 .landing {
-    font-family: Helvetica;
+    font-family: Garamond;
     .name {
         text-align: center;
         a {
-            font-size: 100px;
+            font-size: 6em;
             color: #828282;
+            transition: font-size 1s;
             &:hover, &:focus, &:visited, &:active {
                 text-decoration: none;
                 color: #828282;
+            }
+            @media (max-width: 768px) {
+                font-size: 5em;
+            }
+            @media (max-width: 400px) {
+                font-size: 4em;
             }
         }
     }
