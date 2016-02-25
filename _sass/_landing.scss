@@ -1,72 +1,61 @@
-html {
+.landing_page {
+    text-align: center;
 }
 
-body {
-    background-image: url('/images/background.png');
+/**
+ * Site header
+ */
+.site-header.landing_page  {
+    padding: $spacing-unit / 2;
+    @include media-query($on-palm) {
+        padding-bottom: $spacing-unit / 2;
+    }
+    .site-title {
+        display: block;
+        line-height: 72px;
+        float: initial;
+        font-size: 6em;
+        transition: font-size 1s;
+        &:hover, &:focus, &:visited, &:active {
+            text-decoration: none;
+            color: $text-color;
+        }
+        @media (max-width: 768px) {
+            font-size: 5em;
+        }
+        @media (max-width: 400px) {
+            font-size: 3.75em;
+        }
+    }
+    .site-nav {
+        float: initial;
+        @include media-query($on-palm) {
+            background-color: transparent;
+            position: relative;
+            right: 0;
+            text-align: center;
+            
+            .menu-icon {
+                display: none;
+            }
+            .trigger {
+                display: block;
+            }
+        }
+    }
 }
-.landing {
-    font-family: Garamond;
-    .name {
-        text-align: center;
-        a {
-            font-size: 6em;
-            color: #828282;
-            transition: font-size 1s;
-            &:hover, &:focus, &:visited, &:active {
-                text-decoration: none;
-                color: #828282;
-            }
-            @media (max-width: 768px) {
-                font-size: 5em;
-            }
-            @media (max-width: 400px) {
-                font-size: 4em;
-            }
-        }
-    }
-    .social-media-links {
-        text-align: center;
-        ul {
-            list-style-type: none;
-            margin: 0;
-            display: inline-flex;
-            border-radius: 24px;
-            padding-left: 10px;
-            padding-right: 10px;
-            li {
-                display: inline;
-                padding: 10px;
-                a {
-                    &:hover, &:focus, &:visited, &:active {
-                        text-decoration: none;
-                    }
-                    svg {
-                        transition: transform 0.25s cubic-bezier(0.5, -0.25, 0.5, 3);
-                        .svg {
-                            fill: #828282;
-                            transition: fill 0.5s;
-                        }
-                        &:hover {
-                            transform: scale(1.5);
-                            .svg-linkedin {
-                                fill: #0077b5;
-                            }
-                            .svg-github {
-                                fill: #4183c4;
-                            }
-                            .svg-facebook {
-                                fill: #3b5998
-                            }
-                            .svg-twitter {
-                                fill: #55acee;
-                            }
-                            .svg-tumblr {
-                                fill: #35465c;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
+
+/**
+ * Site footer
+ */
+.site-footer.landing_page {
+    padding: $spacing-unit / 2 0;
+    border: none;
+}
+
+/**
+ * Page content
+ */
+.page-content {
+    padding: 0;
 }

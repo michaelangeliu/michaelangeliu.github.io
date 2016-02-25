@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Life Quotes
+title: Quotes
 permalink: /quotes/
 ---
 
