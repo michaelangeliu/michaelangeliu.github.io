@@ -16,3 +16,6 @@ linkedin_username: michael-liu-a7389372
 
 # Build settings
 markdown: kramdown
+
+gems:
+ - jekyll-coffeescript
