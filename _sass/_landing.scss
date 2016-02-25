@@ -1,61 +1,71 @@
 .landing_page {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column; /* works with row or column */
+    flex-direction: column;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
     text-align: center;
-}
+    height: 100%;
 
-/**
- * Site header
- */
-.site-header.landing_page  {
-    padding: $spacing-unit/2 0;
-    @include media-query($on-palm) {
-        padding-bottom: $spacing-unit/2;
-    }
-    .site-title {
-        display: block;
-        line-height: 72px;
-        float: initial;
-        font-size: 6em;
-        transition: font-size 1s;
-        &:hover, &:focus, &:visited, &:active {
-            text-decoration: none;
-            color: $text-color;
-        }
-        @media (max-width: 768px) {
-            font-size: 5em;
-        }
-        @media (max-width: 400px) {
-            font-size: 3.75em;
-        }
-    }
-    .site-nav {
-        float: initial;
+    /**
+     * Site header
+     */
+    .site-header  {
+        border: none;
+        padding: $spacing-unit/2 0;
         @include media-query($on-palm) {
-            background-color: transparent;
-            position: relative;
-            right: 0;
-            text-align: center;
-            
-            .menu-icon {
-                display: none;
+            padding-bottom: $spacing-unit/2;
+        }
+        .site-title {
+            display: block;
+            line-height: 72px;
+            float: initial;
+            font-size: 6em;
+            transition: font-size 1s;
+            &:hover, &:focus, &:visited, &:active {
+                text-decoration: none;
+                color: $text-color;
             }
-            .trigger {
-                display: block;
+            @media (max-width: 768px) {
+                font-size: 5em;
+            }
+            @media (max-width: 400px) {
+                font-size: 3.75em;
+            }
+        }
+        .site-nav {
+            float: initial;
+            @include media-query($on-palm) {
+                background-color: transparent;
+                position: relative;
+                right: 0;
+                text-align: center;
+                
+                .menu-icon {
+                    display: none;
+                }
+                .trigger {
+                    display: block;
+                }
             }
         }
     }
-}
 
-/**
- * Site footer
- */
-.site-footer.landing_page {
-    padding: $spacing-unit/2 0;
-    border: none;
-}
+    /**
+     * Site footer
+     */
+    .site-footer {
+        padding: $spacing-unit/2 0;
+        border: none;
+    }
 
-/**
- * Page content
- */
-.page-content {
-    padding: 0;
+    /**
+     * Page content
+     */
+    .page-content {
+        padding: 0;
+    }
 }
