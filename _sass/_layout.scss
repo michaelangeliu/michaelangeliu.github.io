@@ -17,6 +17,7 @@
     float: left;
     color: $text-color;
     transition: all 0.5s;
+    display: inline-block;
     &:visited {
         color: $text-color;
     }
@@ -163,6 +164,47 @@
      .contact {
          padding: 1em;
      }
+    svg#logo {
+        $starting_opacity: 0.3;
+        height: 2em;
+        fill: $text-color;
+        transition: all 0.5s;
+        transform-origin: 50% 50%;
+        opacity: $starting_opacity;
+        
+        animation: spin 60s infinite linear;
+        &:hover {
+            fill: $brand-color;
+            animation: spin_inf 2s infinite linear;
+        }
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+                opacity: $starting_opacity;
+            }
+            48% {
+                transform: rotate(0deg);
+                opacity: 1;
+            }
+            50% {
+                transform: rotate(360deg);
+                opacity: $starting_opacity;
+            }
+            98% {
+                transform: rotate(360deg);
+                opacity: 1;
+            }
+            100% {
+                transform: rotate(0deg);
+                opacity: $starting_opacity;
+            }
+        }
+        @keyframes spin_inf {
+            0% { transform: rotate(0deg); opacity: 1; }
+            50% { opacity: $starting_opacity; }
+            100% { transform: rotate(360deg); opacity: 1; }
+        }
+    }
 }
 
 
