@@ -34,7 +34,7 @@
                 font-size: 5em;
             }
             @media (max-width: 400px) {
-                font-size: 3.75em;
+                font-size: 3em;
             }
         }
         .site-nav {
@@ -74,6 +74,9 @@
         $anim_time: 7s;
         height: 15em;
         transition: all 0.5s;
+        @media (max-width: 400px) {
+            height: 6em;
+        }
         #hourglass {
             opacity: 0;
             fill: transparent;
