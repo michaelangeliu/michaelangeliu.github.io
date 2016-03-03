@@ -1,12 +1,12 @@
 # Site settings
 title: Michael Liu
-email: michaelangeliu+blog@gmail.com
+email: contact@michaelangeliu.com
 description: > # this means to ignore newlines until "baseurl:"
   Soon to be a compiled source of everything Michael Liu wants you
   to know about himself. He's a renaissance man of the modern era.
   Web developer. Aspiring Polyglot. Violinist. Dancer.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://michaelangeliu.github.io" # the base hostname & protocol for your site
+url: "http://www.michaelangeliu.com" # the base hostname & protocol for your site
 
 twitter_username: michaelangeliu
 github_username:  michaelangeliu
