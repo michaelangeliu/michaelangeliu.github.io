@@ -2,7 +2,8 @@
 layout: post
 title:  "Tick Tock"
 date:   2014-06-11 00:00:00
-categories: post 
+categories: thoughts
+tags: thoughts time change
 ---
 Yesterday, I spent an hour or two looking for a book I read when I was younger. It was about two kids who are visited by a third one from the future. They end up time-traveling and saving the world as we know it. I don't really remember the rest of the plot, but the thing that has stuck with me through the years is a phrase in the book. I didn't end up finding the book, but I still think that it's a strange sentiment:
 

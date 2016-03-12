@@ -2,7 +2,8 @@
 layout: post
 title:  "White Tulip"
 date:   2015-07-19 00:00:00
-categories: post 
+categories: thoughts
+tags: thoughts emotion self-awareness
 ---
 
 Today, I finished watching the TV show [Fringe](http://www.imdb.com/title/tt1119644/). It's a show about mad scientists, responsibility, parallel dimensions, love, and many other things. I'll leave the synopsis to IMDB and Wikipedia. I have watched many tv shows these past few years, but Fringe, [Dollhouse](http://www.imdb.com/title/tt1135300/), and [The West Wing](http://www.imdb.com/title/tt0200276) are my favorites. If you haven't seen them, I would highly recommend it. Fringe's presentation of the competing forces of intelligence and emotion is flawless. In the final episode, one character has the line: 
