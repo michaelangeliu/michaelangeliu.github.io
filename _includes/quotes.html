@@ -1,0 +1,9 @@
+<div id="js-quote"></div>
+
+<script>
+    var quotes = [
+        {% for quote in site.data.quotes %}
+            {"text":"{{ quote.text }}", "attribution":"{{ quote.attribution }}", "date":"{{ quote.date }}"}{% unless forloop.last %},{% endunless %}
+        {% endfor %}
+    ];
+</script>

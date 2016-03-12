@@ -165,6 +165,7 @@
          padding: 1em;
      }
     svg#logo {
+        cursor: pointer;
         $starting_opacity: 0.3;
         height: 2em;
         fill: $text-color;
@@ -204,6 +205,9 @@
             50% { opacity: $starting_opacity; }
             100% { transform: rotate(360deg); opacity: 1; }
         }
+    }
+    #js-quote {
+        display: none;
     }
 }
 
