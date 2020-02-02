@@ -1,0 +1,32 @@
+---
+layout: post
+title:  "RecApp"
+date:   2016-03-12 00:00:00
+categories: projects
+tags: "projects, GROUP360 WorldWide, Ruby, Ruby on Rails"
+---
+
+RecApp is a project I worked on at GROUP360 WorldWide. It was started before I arrived as an internal event tracking application for the G360 experiential team. The original ask was fairly straight-forward:
+
+* Users could sign-in and view a list of events
+* Users could add a new event through a form
+* Users could view the information from a single event
+* Users could edit the information on a single event
+
+Over time, as the app was tested and used, the scope has changed. Features have been added, updated, or removed. 
+
+* Events are nested under Programs which are nested under Brands
+* New form fields were added to allow more data to be included
+* Users have different permissions and content access levels
+* User role types have increased to allow for content approvers and client viewers
+* Event photo uploading was added
+* Photos can be filtered by tags or events
+* Photos can be reordered in how they are displayed
+* Photos can be favorited to be shown in the PDF report
+* Weather was added and removed
+* PDF report generation was added
+* Comments can be added and favorited
+* Data can be aggregated on the program level to show statistics of the included events
+* Giveaways can be created and added to events
+
+Working on this project was incredibly helpful for learning some of the intricacies of the Ruby language and the Rails framework.
