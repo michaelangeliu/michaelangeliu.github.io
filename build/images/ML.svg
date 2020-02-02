@@ -1,0 +1,6 @@
+<svg id="landing_logo" viewBox = "0 0 422 422" preserveAspectRatio="xMidYMid meet" version="1.2" xmlns="http://www.w3.org/2000/svg">
+    <!-- <path id="hourglass" d="M1,1 L281,1 L161,208.846 L281,416.692 L1,416.692 L121,208.846 L1,1 Z"/> -->
+    <path id="M" d="M171,174.205 L71,1 L191,1 L211,35.641 L231,1 L351,1 L251,174.205 L231,139.564 L291,35.641 L251,35.641 L211,104.923 L171,35.641 L131,35.641 L191,139.564 L171,174.205 Z" stroke="#828282" fill="#2a7ae2" />
+    <path id="L" d="M211,174.205 L71,416.692 L351,416.692 L331,382.051 L131,382.051 L231,208.846 L211,174.205 Z" stroke="#828282" fill="#2a7ae2" />
+    <path id="triangle" d="M251,243.487 L191,347.410 L311,347.410 L251,243.487 Z" stroke="#828282" fill="#2a7ae2" />
+</svg>
