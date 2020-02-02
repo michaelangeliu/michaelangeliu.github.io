@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36">
+<svg xmlns="https://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36">
   <radialGradient id="instagram-gradient" cx="50%" cy="100%" r="100%" fx="0%" fy="135%">
     <stop offset="0%" stop-color="#FFDC80"></stop>
     <stop offset="35%" stop-color="#FCAF45"></stop>

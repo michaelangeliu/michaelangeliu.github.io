@@ -203,7 +203,7 @@ function Resume() {
         <p className="contact">
           <a className="email" href="mailto:michaelangeliu@gmail.com" target="_blank" rel="noopener noreferrer">michaelangeliu@gmail.com</a>
           &nbsp;|&nbsp;
-          <a className="website" href="http://michaelangeliu.com" target="_blank" rel="noopener noreferrer">http://michaelangeliu.com</a>
+          <a className="website" href="https://michaelangeliu.com" target="_blank" rel="noopener noreferrer">https://michaelangeliu.com</a>
         </p>
       </footer>
     </div>
