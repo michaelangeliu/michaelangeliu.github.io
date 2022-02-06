@@ -1,0 +1,36 @@
+// -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+$base-font-family: Garamond Georgia, serif;
+$base-font-size: 16px;
+$small-font-size: $base-font-size * 0.875;
+$base-font-weight: 300;
+$base-line-height: 1.5;
+
+$spacing-unit: 32px;
+
+$text-color:       #525252;
+$background-color: #f1f1f1;
+$brand-color:      #2a7ae2;
+
+$grey-color:       #828282;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark:  darken($grey-color, 25%);
+
+// Social colors
+$linkedin-color:    #0077b5;
+$github-color:      #4183c4;
+$facebook-color:    #3b5998;
+$twitter-color:     #55acee;
+$tumblr-color:      #35465c;
+
+// Breakpoints
+$size-xs:           320px;
+$size-sm:           400px;
+$size-md:           768px;
+$size-lg:           900px;
+$size-xl:           1200px;
+
+@mixin media-query($device) {
+	@media (min-width: $device) {
+		@content;
+	}
+}

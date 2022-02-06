@@ -1,0 +1,27 @@
+@use '../../styles/variables' as *;
+
+.externalLinkIcons {
+  margin-left: 0;
+  list-style-type: none;
+  display: inline-flex;
+  padding-left: calc($spacing-unit / 4);
+  padding-right: calc($spacing-unit / 4);
+
+  li {
+    display: inline;
+    padding: calc($spacing-unit / 4);
+    transition: transform 0.25s cubic-bezier(0.5, -0.25, 0.5, 3);
+    &:hover {
+      transform: scale(1.25);
+    }
+
+    a {
+      &:hover,
+      &:focus,
+      &:visited,
+      &:active {
+        text-decoration: none;
+      }
+    }
+  }
+}

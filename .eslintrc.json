@@ -1,0 +1,233 @@
+{
+	"root": true,
+	"parser": "@typescript-eslint/parser",
+	"plugins": [
+		"@typescript-eslint"
+	],
+	"extends": [
+		"eslint:recommended",
+		"plugin:import/recommended",
+		"plugin:import/typescript",
+		"plugin:@typescript-eslint/eslint-recommended",
+		"plugin:@typescript-eslint/recommended",
+		"next/core-web-vitals"
+	],
+	"rules": {
+		// Possible Problems
+		"array-callback-return": 2,
+		"no-await-in-loop": 2,
+		"no-constructor-return": 2,
+		"no-duplicate-imports": 2,
+		"no-promise-executor-return": 2,
+		"no-self-compare": 2,
+		"no-template-curly-in-string": 2,
+		"no-unmodified-loop-condition": 2,
+		"no-unreachable-loop": 2,
+		"no-unused-private-class-members": 2,
+		"no-use-before-define": 2,
+		"require-atomic-updates": 2,
+
+		// Suggestions
+		"eqeqeq": [2, "always"],
+		"no-confusing-arrow": 2,
+		"no-lonely-if": 2,
+		"no-console": 2,
+		"no-undef-init": 2,
+		"no-unneeded-ternary": 2,
+		"prefer-const": 2,
+		"prefer-destructuring": 2,
+		"prefer-template": 2,
+		"sort-vars": 2,
+		"spaced-comment": [
+			2,
+			"always",
+			{
+				"markers": [
+					"/"
+				]
+			}
+		],
+
+		// Stylistic
+		"array-bracket-newline": [2, "consistent"],
+		"array-bracket-spacing": [2, "never"],
+		"array-element-newline": [
+			2,
+			{
+				"ArrayExpression": {
+					"multiline": true,
+					"minItems": 2
+				},
+				"ArrayPattern": {
+					"multiline": true,
+					"minItems": 3
+				}
+			}
+		],
+		"block-spacing": [2, "always"],
+		"brace-style": [
+			2,
+			"1tbs",
+			{
+				"allowSingleLine": true
+			}
+		],
+		"comma-dangle": [
+			2,
+			{
+				"arrays": "always-multiline",
+				"objects": "always-multiline",
+				"imports": "always-multiline",
+				"exports": "always-multiline",
+				"functions": "ignore"
+			}
+		],
+		"comma-spacing": [
+			2,
+			{
+				"before": false,
+				"after": true
+			}
+		],
+		"comma-style": [2, "last"],
+		"computed-property-spacing": [2, "never"],
+		"eol-last": [2, "always"],
+		"func-call-spacing": 2,
+		"func-name-matching": 2,
+		"function-paren-newline": [2, "multiline"],
+		"implicit-arrow-linebreak": 2,
+		"indent": [
+			2,
+			"tab",
+			{
+				"SwitchCase": 1
+			}
+		],
+		"key-spacing": [
+			2,
+			{
+				"mode": "strict"
+			}
+		],
+		"keyword-spacing": 2,
+		"linebreak-style": [
+			2,
+			"unix"
+		],
+		"newline-per-chained-call": 2,
+		"no-multiple-empty-lines": 2,
+		"no-trailing-spaces": 2,
+		"no-whitespace-before-property": 2,
+		"object-curly-newline": [
+			2,
+			{
+				"consistent": true,
+				"minProperties": 2
+			}
+		],
+		"object-curly-spacing": [2, "always"],
+		"object-property-newline": 2,
+		"one-var": [2, "never"],
+		"operator-assignment": [2, "always"],
+		"operator-linebreak": [2, "before"],
+		"padded-blocks": [2, "never"],
+		"padding-line-between-statements": [
+			2,
+			{
+				"blankLine": "always",
+				"prev": [
+					"const",
+					"let"
+				],
+				"next": "*"
+			},
+			{
+				"blankLine": "any",
+				"prev": [
+					"const",
+					"let"
+				],
+				"next": [
+					"const",
+					"let"
+				]
+			}
+		],
+		"quote-props": [2, "as-needed"],
+		"quotes": [
+			2,
+			"single",
+			{
+				"avoidEscape": true
+			}
+		],
+		"rest-spread-spacing": [2, "never"],
+		"semi": [2, "always"],
+		"semi-style": [2, "last"],
+		"semi-spacing": 2,
+		"sort-keys": [
+			2,
+			"asc",
+			{
+				"natural": true
+			}
+		],
+		"space-before-blocks": 2,
+		"space-before-function-paren": [
+			2,
+			{
+				"anonymous": "always",
+				"named": "never"
+			}
+		],
+		"space-in-parens": [2, "never"],
+		"switch-colon-spacing": 2,
+		"space-infix-ops": 2,
+		"space-unary-ops": [
+			2,
+			{
+				"words": true,
+				"nonwords": false
+			}
+		],
+		"template-tag-spacing": [
+			2,
+			"always"
+		],
+
+		// Import
+		"import/order": [
+			2,
+			{
+				"alphabetize": {
+					"order": "asc"
+				},
+				"groups": [
+					"builtin",
+					"external",
+					"internal",
+					"parent",
+					"sibling",
+					"index",
+					"object",
+					"type"
+				],
+				"newlines-between": "always"
+			}
+		],
+
+		// React
+		"react/jsx-no-target-blank": 2,
+		"react/jsx-no-duplicate-props": 2,
+		"react/no-direct-mutation-state": 2,
+		"react/no-find-dom-node": 2,
+		"react/no-string-refs": [
+			2,
+			{
+				"noTemplateLiterals": true
+			}
+		],
+		"react/no-unescaped-entities": 2,
+		"react/sort-comp": 2
+	}
+}

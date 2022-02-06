@@ -1,0 +1,101 @@
+@use 'reset' as *;
+@use 'variables' as *;
+
+html,
+body {
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  font-weight: $base-font-weight;
+  line-height: 1.5;
+  color: $text-color;
+}
+
+body {
+  background: url('/static/images/background.png'), $background-color;
+  @media print {
+    background: white;
+  }
+}
+
+/**
+ * Set `margin-bottom` to maintain vertical rhythm
+ */
+h1, h2, h3, h4, h5, h6,
+p,
+blockquote,
+pre,
+nav,
+ul, ol,
+dl, figure,
+%vertical-rhythm {
+  margin-bottom: calc($spacing-unit / 2);
+}
+
+/**
+ * Links
+ */
+a {
+  color: $brand-color;
+  text-decoration: none;
+
+  &:visited {
+    color: darken($brand-color, 15%);
+  }
+
+  &:hover {
+    color: $text-color;
+    text-decoration: underline;
+  }
+}
+
+/**
+ * Lists
+ */
+ul, ol {
+  margin-left: $spacing-unit;
+}
+
+li {
+  > ul,
+  > ol {
+       margin-bottom: 0;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+/**
+ * Social Icons
+ * - the classes can't be prefixed since the classes are part of the svg paths themselves
+ */
+.social-icon {
+  width: 2rem;
+  height: auto;
+  .svg {
+    fill: $text-color;
+    transition: fill 0.5s;
+  }
+  &:hover {
+    .svg-linkedin {
+      fill: $linkedin-color;
+    }
+    .svg-github {
+      fill: $github-color;
+    }
+    .svg-facebook {
+      fill: $facebook-color;
+    }
+    .svg-instagram {
+      /* gradient and fallback color */
+      fill: url(#instagram-gradient) #C13584;
+    }
+    .svg-twitter {
+      fill: $twitter-color;
+    }
+    .svg-tumblr {
+      fill: $tumblr-color;
+    }
+  }
+}

@@ -1,0 +1,269 @@
+{
+	"certifications": [
+		{
+			"id": "CLF-C01",
+			"title": "AWS Certified Cloud Practitioner",
+			"certificationDate": "2021-11-29"
+		},
+		{
+			"id": "SAA-C02",
+			"title": "AWS Certified Software Solutions Architect - Associate",
+			"certificationDate": "2021-11-30"
+		}
+	],
+	"experiences": [
+		{
+			"organization": "Washington University Pops Orchestra",
+			"location": "Saint Louis, MO",
+			"positions": [
+				{
+					"title": "Member",
+					"startDate": "2010-09-01",
+					"endDate": "2014-05-16",
+					"activities": []
+				},
+				{
+					"title": "Treasurer",
+					"startDate": "2011-08-01",
+					"endDate": "2013-05-31",
+					"activities": [
+						{
+							"summary": "Managed a budget of ~$2000 and all music and equipment purchases"
+						},
+						{
+							"summary": "Organized semester concerts and social events for the orchestra"
+						},
+						{
+							"summary": "Developed publicity to increase orchestra size and promote concert attendance"
+						}
+					]
+				}
+			]
+		},
+		{
+			"organization": "Alpha Phi Omega - Alpha Phi Chapter",
+			"location": "Saint Louis, MO",
+			"positions": [
+				{
+					"title": "Member",
+					"startDate": "2011-01-01",
+					"endDate": "2014-05-16",
+					"activities": []
+				},
+				{
+					"title": "VP of Membership",
+					"startDate": "2012-08-01",
+					"endDate": "2013-12-31",
+					"activities": [
+						{
+							"summary": "Planned and coordinated a membership program for 200+ member chapter"
+						},
+						{
+							"summary": "Managed a committee of 8 members to develop events to strengthen group dynamics"
+						},
+						{
+							"summary": "Built Google forms and spreadsheets to facilitate the brother-matching program"
+						},
+						{
+							"summary": "Rebuilt and updated a Google spreadsheet for recording and tracking requirements"
+						}
+					]
+				}
+			]
+		},
+		{
+			"organization": "Washington University Residential Life",
+			"location": "Saint Louis, MO",
+			"positions": [
+				{
+					"title": "Residential Advisor",
+					"startDate": "2012-08-09",
+					"endDate": "2014-05-16",
+					"activities": [
+						{
+							"summary": "Supported and advised 80 residents by creating programs to engage students"
+						},
+						{
+							"summary": "Trained for 250+ hours on topics including social activism, conflict resolution, event planning, and community building"
+						},
+						{
+							"summary": "Served an on-call responder for crises and emergencies"
+						},
+						{
+							"summary": "Assisted in designing recruitment posters and improving the RA selection process"
+						},
+						{
+							"summary": "Facilitated group and individual interviews for potential RA candidates"
+						}
+					]
+				}
+			]
+		},
+		{
+			"organization": "We Are Alexander",
+			"location": "Saint Louis, MO",
+			"positions": [
+				{
+					"title": "Digital Intern",
+					"startDate": "2014-05-27",
+					"endDate": "2014-09-01",
+					"activities": [
+						{
+							"summary": "Collaborated with multi-disciplinary team to pitch rebranding campaign based on new strategic direction for national account and created digital concept designs"
+						},
+						{
+							"summary": "Contributed to discussion about content-centered design best practices"
+						},
+						{
+							"summary": "Responded to clients' requests regarding updates in timely and efficient manner"
+						},
+						{
+							"summary": "Improved user experience for branded digital applications and websites"
+						},
+						{
+							"summary": "Applied troubleshooting processes to fix existing code and content on brand web pages"
+						}
+					]
+				},
+				{
+					"title": "Full Stack Web Developer",
+					"startDate": "2014-09-01",
+					"endDate": "2017-07-28",
+					"activities": [
+						{
+							"summary": "Developed 10 microsites for 6 national brands to increase brand internet presence",
+							"details": [
+								"Built in Ruby using the Sinatra framework and deployed to Heroku",
+								"Collaborated with designers to create mobile-friendly websites and designs",
+								"Updated Adobe Experience Manager templates and content"
+							]
+						},
+						{
+							"summary": "Developed new features for an event tracking application for the internal experiential team",
+							"details": [
+								"Built in Ruby on Rails and deployed to Heroku"
+							]
+						},
+						{
+							"summary": "Developed an international company's corporate social responsibility site",
+							"details": [
+								"Created user journeys, wireframes, and ux design"
+							]
+						},
+						{
+							"summary": "Implemented brand identity and content changes in Adobe Experience Manager for 5 national brands"
+						},
+						{
+							"summary": "Set up AWS Elastic Beanstalk to support WordPress for the company website"
+						},
+						{
+							"summary": "Collaborated with 3rd party vendors to create and update content in 3 iOS applications"
+						}
+					]
+				}
+			]
+		},
+		{
+			"organization": "Sherpa CRM",
+			"location": "Saint Louis, MO",
+			"positions": [
+				{
+					"title": "Software Engineer",
+					"startDate": "2017-08-07",
+					"endDate": "2019-08-31",
+					"activities": [
+						{
+							"summary": "Implemented a customizable, shareable, scheduleable reporting engine to modernize analytics for our customers",
+							"details": [
+								"Designed a rudimentary system to generate SQL statements through Javascript to standardize SQL statements",
+								"Implemented d3 charting to display data visualizations both on the web and in pdf exports"
+							]
+						},
+						{
+							"summary": "Established documentation of team coding styles and best practices in Confluence",
+							"details": [
+								"Documented onboarding process for setting up a local development environment",
+								"Created a repository of useful libraries, applications, and learning tools for new developers"
+							]
+						},
+						{
+							"summary": "Collaborating with vendors to build a data warehouse to run cross-company data analysis",
+							"details": [
+								"Maintained ETL code for AWS Database Migration Servce, Batch jobs, and Lambdas to consolidate data from MySQL to S3 to Redshift",
+								"Constructued OLAP data models to facilitate data analysis in Redshift and Tableau",
+								"Implemented a Tableau embed and built custom dashboards for internal and external use"
+							]
+						}
+					]
+				},
+				{
+					"title": "Technical Lead",
+					"startDate": "2019-09-01",
+					"endDate": "2021-09-30",
+					"activities": [
+						{
+							"summary": "Optimized query performance by 50-95% for customers with millions of data records",
+							"details": [
+								"Examined EXPLAIN plans to identify poorly indexed tables",
+								"Extracted common table expressions consolidate shared queries and increase performance"
+							]
+						},
+						{
+							"summary": "Rearchitected the web client data flow to normalize Redux state",
+							"details": [
+								"Wrote tickets to distribute the work amongst members of the frontend engineering team",
+								"Reduced duplicated data stored in the global store by 10%"
+							]
+						},
+						{
+							"summary": "Mentored 2 frontend engineers and an intern directly to establish coding best practices",
+							"details": [
+								"Reviewed code changes to discuss potential optimizations and code-maintainability improvements",
+								"Led biweekly frontend \"guild\" meetings to promote development of planning skills, coding best practices, and cross-team collaboration"
+							]
+						},
+						{
+							"summary": "Collaborated with the product team and other sr. engineers to redesign database tables to normalize data model",
+							"details": [
+								"Designed workflow diagrams to identify loopholes",
+								"Discussed, clarified, and documented unclear domain-specific terminology"
+							]
+						},
+						{
+							"summary": "Planned and upgraded React from v15 to v16 to take advantage of hooks and other more modern libraries",
+							"details": [
+								"Upgraded Webpack from v3 to v5 to impove build speed by 30%",
+								"Implemented Husky to run ESLint and basic code quality checks on staged file"
+							]
+						}
+					]
+				},
+				{
+					"title": "Software Engineering Manager",
+					"startDate": "2021-10-01",
+					"endDate": "",
+					"activities": [
+						{
+							"summary": "Managed a team of 3 engineers and was responsible for their mentorship, growth, and job satisfaction",
+							"details": [
+								"Held biweekly 1-1s to discuss concerns and opportunities",
+								"Served as a line of communication between the team and our VP of Engineering"
+							]
+						},
+						{
+							"summary": "Interviewed potential engineering candidates to assess technical skills and cultural fit in order to grow the development team by 50%"
+						},
+						{
+							"summary": "Delivered a \"contact consent\" feature for our EU customers to manage GDPR preferences",
+							"details": [
+								"Designed a more microservice-y approach to decouple contact consent from our database",
+								"Delegated tasks and features to the appropriate engineers inside and outside of the team",
+								"Migrated existing custom customer data into the appropriate standardized fields"
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
