@@ -100,10 +100,10 @@
 							]
 						},
 						{
-							"summary": "Collaborating with vendors to build a data warehouse to run cross-company data analysis",
+							"summary": "Collaborated with vendors to build a data warehouse for running cross-company data analysis",
 							"details": [
 								"Maintained ETL code for AWS Database Migration Servce, Batch jobs, and Lambdas to consolidate data from MySQL to S3 to Redshift",
-								"Constructued OLAP data models to facilitate data analysis in Redshift and Tableau",
+								"Constructed OLAP data models to facilitate data analysis in Redshift and Tableau",
 								"Implemented a Tableau embed and built custom dashboards for internal and external use"
 							]
 						}
@@ -118,7 +118,7 @@
 							"summary": "Optimized query performance by 50-95% for customers with millions of data records",
 							"details": [
 								"Examined EXPLAIN plans to identify poorly indexed tables",
-								"Extracted common table expressions consolidate shared queries and increase performance"
+								"Extracted common table expressions to consolidate shared queries"
 							]
 						},
 						{
@@ -164,7 +164,7 @@
 							]
 						},
 						{
-							"summary": "Interviewed potential engineering candidates to assess technical skills and cultural fit in order to grow the development team by 50%"
+							"summary": "Interviewed potential engineering candidates, growing the development team by 50%"
 						},
 						{
 							"summary": "Delivered a \"contact consent\" feature for our EU customers to manage GDPR preferences",
