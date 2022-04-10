@@ -1,11 +1,11 @@
 @use '../styles/variables' as *;
 
 .certifications {
-  display: flex;
-  flex-direction: column-reverse;
-  gap: $spacing-unit;
-  
-  @include media-query($size-sm) {
-    flex-direction: row;
-  }
+	display: flex;
+	flex-direction: column-reverse;
+	gap: $spacing-unit;
+	
+	@include media-query($size-sm) {
+		flex-direction: row;
+	}
 }

@@ -1,6 +1,6 @@
 import type { ReactNode } from 'react';
 
 export type NavigationItem = {
-  content: ReactNode,
-  href: string,
+	content: ReactNode,
+	href: string,
 };

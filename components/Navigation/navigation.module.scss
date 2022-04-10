@@ -1,25 +1,25 @@
 @use '../../styles/variables' as *;
 
 .navigation {
-  ul {
-    margin-left: 0;
-    display: flex;
-    gap: 0.5em;
-    li {
-      display: inline-block;
-      a {
-        color: $text-color;
-        line-height: 1em;
-        background-color: transparent;
-        border-radius: 1em;
-        padding: 0.5em 1em;
-        transition: all 0.5s;
-        &:hover {
-          text-decoration: none;
-          color: $grey-color-light;
-          background-color: $grey-color;
-        }
-      }
-    }
-  }
+	ul {
+		margin-left: 0;
+		display: flex;
+		gap: 0.5em;
+		li {
+			display: inline-block;
+			a {
+				color: $text-color;
+				line-height: 1em;
+				background-color: transparent;
+				border-radius: 1em;
+				padding: 0.5em 1em;
+				transition: all 0.5s;
+				&:hover {
+					text-decoration: none;
+					color: $grey-color-light;
+					background-color: $grey-color;
+				}
+			}
+		}
+	}
 }

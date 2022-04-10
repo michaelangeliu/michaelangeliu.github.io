@@ -1,12 +1,13 @@
-import type { ExternalAccount } from '../types/externalAccount';
 
 import Image from 'next/image';
 
-import LinkedinLogo from '../public/static/images/social-icons/linkedin.svg';
-import GithubLogo from '../public/static/images/social-icons/github.svg';
 import FacebookLogo from '../public/static/images/social-icons/facebook.svg';
+import GithubLogo from '../public/static/images/social-icons/github.svg';
 import InstagramLogo from '../public/static/images/social-icons/instagram.svg';
+import LinkedinLogo from '../public/static/images/social-icons/linkedin.svg';
 import TwitterLogo from '../public/static/images/social-icons/twitter.svg';
+
+import type { ExternalAccount } from '../types/externalAccount';
 // import TumblrLogo from '../public/static/images/social-icons/tumblr.svg';
 
 export const socialMediaAccounts: Array<ExternalAccount> = [

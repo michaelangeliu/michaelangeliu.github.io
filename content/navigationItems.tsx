@@ -6,8 +6,8 @@ export const navigationItems: Array<NavigationItem> = [
 		href: '/',
 	},
 	// {
-	//   content: <a>About</a>,
-	//   href: '/about',
+	// 	content: <a>About</a>,
+	// 	href: '/about',
 	// },
 	{
 		content: <a>Certifications</a>,

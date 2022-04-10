@@ -1,109 +1,109 @@
 @use '../../styles/variables' as *;
 
 svg#landingLogo {
-  $anim_time: 7s;
-  height: 10em;
-  transition: all 0.5s;
-  @include media-query($size-sm) {
-    height: 15em;
-  }
-  #hourglassSilhouette {
-    opacity: 0;
-    fill: transparent;
-    animation: fill_H $anim_time linear;
-  }
-  #M, #L, #triangle {
-    fill: $brand-color;
-    stroke: $text-color;
-    stroke-width: 3px;
-  }
-  #M {
-    stroke-dasharray: 1280;
-    animation: draw_M $anim_time linear, fill_M $anim_time linear;
-  }
-  #L {
-    stroke-dasharray: 1040;
-    animation: draw_L $anim_time linear, fill_L $anim_time linear;
-  }
-  #triangle {
-    stroke-dasharray: 360;
-    animation: draw_T $anim_time linear, fill_T $anim_time linear;
-  }
+	$anim_time: 7s;
+	height: 10em;
+	transition: all 0.5s;
+	@include media-query($size-sm) {
+		height: 15em;
+	}
+	#hourglassSilhouette {
+		opacity: 0;
+		fill: transparent;
+		animation: fill_H $anim_time linear;
+	}
+	#M, #L, #triangle {
+		fill: $brand-color;
+		stroke: $text-color;
+		stroke-width: 3px;
+	}
+	#M {
+		stroke-dasharray: 1280;
+		animation: draw_M $anim_time linear, fill_M $anim_time linear;
+	}
+	#L {
+		stroke-dasharray: 1040;
+		animation: draw_L $anim_time linear, fill_L $anim_time linear;
+	}
+	#triangle {
+		stroke-dasharray: 360;
+		animation: draw_T $anim_time linear, fill_T $anim_time linear;
+	}
 
-  @keyframes draw_M {
-    0% { stroke-dashoffset: 1280; }
-    25% {
-      animation-timing-function: steps(1, end);
-      stroke-dashoffset: 0;
-      opacity: 1;
-    }
-    30% {
-      animation-timing-function: steps(1, end);
-      opacity: 0.1;
-    }
-    95% { opacity: 0.1; }
-    100% { opacity: 1; }
-  }
-  @keyframes fill_M {
-    0% { fill: transparent; }
-    25% { fill: transparent; }
-    28% { fill: $brand-color; }
-  }
+	@keyframes draw_M {
+		0% { stroke-dashoffset: 1280; }
+		25% {
+			animation-timing-function: steps(1, end);
+			stroke-dashoffset: 0;
+			opacity: 1;
+		}
+		30% {
+			animation-timing-function: steps(1, end);
+			opacity: 0.1;
+		}
+		95% { opacity: 0.1; }
+		100% { opacity: 1; }
+	}
+	@keyframes fill_M {
+		0% { fill: transparent; }
+		25% { fill: transparent; }
+		28% { fill: $brand-color; }
+	}
 
-  @keyframes draw_L {
-    0% { stroke-dashoffset: 1040; }
-    30% { stroke-dashoffset: 1040; }
-    55% {
-      animation-timing-function: steps(1, end);
-      stroke-dashoffset: 0;
-      opacity: 1;
-    }
-    60% {
-      animation-timing-function: steps(1, end);
-      opacity: 0.1;
-    }
-    95% { opacity: 0.1; }
-    100% { opacity: 1; }
+	@keyframes draw_L {
+		0% { stroke-dashoffset: 1040; }
+		30% { stroke-dashoffset: 1040; }
+		55% {
+			animation-timing-function: steps(1, end);
+			stroke-dashoffset: 0;
+			opacity: 1;
+		}
+		60% {
+			animation-timing-function: steps(1, end);
+			opacity: 0.1;
+		}
+		95% { opacity: 0.1; }
+		100% { opacity: 1; }
 
-  }
-  @keyframes fill_L {
-    0% { fill: transparent; }
-    55% { fill: transparent; }
-    58% { fill: $brand-color; }
-  }
+	}
+	@keyframes fill_L {
+		0% { fill: transparent; }
+		55% { fill: transparent; }
+		58% { fill: $brand-color; }
+	}
 
-  @keyframes draw_T {
-    0% { stroke-dashoffset: 360; }
-    60% { stroke-dashoffset: 360; }
-    85% {
-      animation-timing-function: steps(1, end);
-      stroke-dashoffset: 0;
-      opacity: 1;
-    }
-    90% {
-      animation-timing-function: steps(1, end);
-      opacity: 0.1;
-    }
-    95% { opacity: 0.1; }
-    100% { opacity: 1; }
-  }
-  @keyframes fill_T {
-    0% { fill: transparent; }
-    85% { fill: transparent; }
-    88% { fill: $brand-color; }
-  }
-  @keyframes fill_H {
-    90% {
-      opacity: 0;
-      fill: transparent;
-    }
-    95% {
-      opacity: 1;
-      fill: $brand-color;
-    }
-    100% {
-      opacity: 0;
-      fill: transparent;
-    }
-  }
+	@keyframes draw_T {
+		0% { stroke-dashoffset: 360; }
+		60% { stroke-dashoffset: 360; }
+		85% {
+			animation-timing-function: steps(1, end);
+			stroke-dashoffset: 0;
+			opacity: 1;
+		}
+		90% {
+			animation-timing-function: steps(1, end);
+			opacity: 0.1;
+		}
+		95% { opacity: 0.1; }
+		100% { opacity: 1; }
+	}
+	@keyframes fill_T {
+		0% { fill: transparent; }
+		85% { fill: transparent; }
+		88% { fill: $brand-color; }
+	}
+	@keyframes fill_H {
+		90% {
+			opacity: 0;
+			fill: transparent;
+		}
+		95% {
+			opacity: 1;
+			fill: $brand-color;
+		}
+		100% {
+			opacity: 0;
+			fill: transparent;
+		}
+	}
 }
