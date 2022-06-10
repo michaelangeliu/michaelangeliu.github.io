@@ -78,7 +78,7 @@
 		},
 		{
 			"organization": "Sherpa CRM",
-			"location": "Saint Louis, MO",
+			"location": "Saint Louis, MO / Remote",
 			"positions": [
 				{
 					"title": "Software Engineer",
@@ -88,7 +88,7 @@
 						{
 							"summary": "Implemented a customizable, shareable, scheduleable reporting engine to modernize analytics for our customers",
 							"details": [
-								"Designed a rudimentary system to generate SQL statements through Javascript to standardize SQL statements",
+								"Designed a rudimentary system to generate SQL through Javascript in order to standardize queries",
 								"Implemented d3 charting to display data visualizations both on the web and in pdf exports"
 							]
 						},
@@ -124,22 +124,22 @@
 						{
 							"summary": "Rearchitected the web client data flow to normalize Redux state",
 							"details": [
-								"Wrote tickets to distribute the work amongst members of the frontend engineering team",
+								"Documented technical needs and broke down complex work into achievable, minimally-dependent tickets for the frontend engineering team",
 								"Reduced duplicated data stored in the global store by 10%"
 							]
 						},
 						{
-							"summary": "Mentored 2 frontend engineers and an intern directly to establish coding best practices",
+							"summary": "Mentored 2 frontend engineers and an intern to establish coding best practices",
 							"details": [
 								"Reviewed code changes to discuss potential optimizations and code-maintainability improvements",
 								"Led biweekly frontend \"guild\" meetings to promote development of planning skills, coding best practices, and cross-team collaboration"
 							]
 						},
 						{
-							"summary": "Collaborated with the product team and other sr. engineers to redesign database tables to normalize data model",
+							"summary": "Collaborated with the product team and other sr. engineers in redesigning database tables to normalize data model",
 							"details": [
-								"Designed workflow diagrams to identify loopholes",
-								"Discussed, clarified, and documented unclear domain-specific terminology"
+								"Designed and coached others in the creation of workflow diagrams to identify pitfalls, undesireable states, and complexity concerns",
+								"Advocated for and led technical discussion, clarification, and documentation of unclear domain-specific terminology"
 							]
 						},
 						{
@@ -164,13 +164,13 @@
 							]
 						},
 						{
-							"summary": "Interviewed potential engineering candidates, growing the development team by 50%"
+							"summary": "Interviewed potential engineering candidates; aided in growing the development team by 50%"
 						},
 						{
 							"summary": "Delivered a \"contact consent\" feature for our EU customers to manage GDPR preferences",
 							"details": [
-								"Designed a more microservice-y approach to decouple contact consent from our database",
-								"Delegated tasks and features to the appropriate engineers inside and outside of the team",
+								"Designed a more microservice-oriented approach to decouple contact consent from our database",
+								"Distributed tasks and features to appropriate teams by considering the strengths of individual contributors",
 								"Migrated existing custom customer data into the appropriate standardized fields"
 							]
 						}

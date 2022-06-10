@@ -55,7 +55,7 @@ const Resume: NextPage = () => {
 			<main>
 				<section className={styles.summary}>
 					<p>
-						Curious, detail-oriented software engineer with experience upskilling individuals and fostering collaboration.
+						Curious, detail-oriented software engineer with experience growing individuals and fostering collaboration.
 						Passionate about creating holistic solutions through data-first design and writing consistent, maintainable code.
 						{/* Seeking to continue growth and education through contributions to mission-driven organizations. */}
 					</p>
