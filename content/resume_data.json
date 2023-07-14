@@ -154,7 +154,7 @@
 				{
 					"title": "Software Engineering Manager",
 					"startDate": "2021-10-01",
-					"endDate": "",
+					"endDate": "2023-04-18",
 					"activities": [
 						{
 							"summary": "Managed a team of 3 engineers and was responsible for their mentorship, growth, and job satisfaction",
@@ -172,6 +172,13 @@
 								"Designed a more microservice-oriented approach to decouple contact consent from our database",
 								"Distributed tasks and features to appropriate teams by considering the strengths of individual contributors",
 								"Migrated existing custom customer data into the appropriate standardized fields"
+							]
+						},
+						{
+							"summary": "Delivered the microservice framework for integrating company data after the merger",
+							"details": [
+								"Collaborated with the team to create Kafka providers and consumers allowing async data integration",
+								"Established extensible protobuf messages to create forwards and backwards compatible versioned data transfers"
 							]
 						}
 					]
