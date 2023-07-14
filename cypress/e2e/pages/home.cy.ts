@@ -19,3 +19,6 @@ describe('Home Page Content', () => {
 		cy.get('a[href*="twitter"]').should('have.attr', 'target', '_blank');
 	});
 });
+
+// Prevent TypeScript from reading file as legacy script
+export {};

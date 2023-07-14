@@ -13,3 +13,6 @@ describe('Navigation', () => {
 		cy.get('a[href*="resume"]').should('have.attr', 'target', '_blank');
 	});
 });
+
+// Prevent TypeScript from reading file as legacy script
+export {};

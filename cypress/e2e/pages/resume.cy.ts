@@ -12,3 +12,6 @@ describe('Resume Page Content', () => {
 		cy.get('footer').contains('michaelangeliu.com');
 	});
 });
+
+// Prevent TypeScript from reading file as legacy script
+export {};
