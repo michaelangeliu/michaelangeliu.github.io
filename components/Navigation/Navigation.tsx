@@ -22,7 +22,10 @@ const Navigation: FunctionComponent<Props> = ({
 						<li
 							key={index}
 						>
-							<Link href={navItem.href}>
+							<Link
+								href={navItem.href}
+								target={navItem.target}
+							>
 								{navItem.content}
 							</Link>
 						</li>

@@ -2,19 +2,20 @@ import type { NavigationItem } from '../types/navigationItem';
 
 export const navigationItems: Array<NavigationItem> = [
 	{
-		content: <a>Home</a>,
+		content: 'Home',
 		href: '/',
 	},
 	// {
-	// 	content: <a>About</a>,
+	// 	content: 'About',
 	// 	href: '/about',
 	// },
 	{
-		content: <a>Certifications</a>,
+		content: 'Certifications',
 		href: '/certifications',
 	},
 	{
-		content: <a target="_blank">Résumé</a>,
+		content: 'Résumé',
 		href: '/resume',
+		target: '_blank',
 	},
 ];
