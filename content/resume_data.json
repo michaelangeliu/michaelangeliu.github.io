@@ -145,7 +145,7 @@
 						{
 							"summary": "Planned and upgraded React from v15 to v16 to take advantage of hooks and other more modern libraries",
 							"details": [
-								"Upgraded Webpack from v3 to v5 to impove build speed by 30%",
+								"Upgraded Webpack from v3 to v5 to improve build speed by 30%",
 								"Implemented Husky to run ESLint and basic code quality checks on staged file"
 							]
 						}
