@@ -1,5 +1,15 @@
 @use '../styles/variables' as *;
 
+.excludedForPrivacy {
+	position: absolute;
+	display: none !important; // To override any other displays
+
+	@media print {
+		position: unset;
+		display: unset !important;
+	}
+}
+
 .resume {
 	display: grid;
 	grid-template-rows: auto 1fr auto;

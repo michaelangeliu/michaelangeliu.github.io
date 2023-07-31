@@ -2,9 +2,12 @@ import { DateTime } from 'luxon';
 import { NextPage } from 'next';
 import Head from 'next/head';
 
+import ExternalLink from '../components/ExternalLink';
 import TimePeriod from '../components/TimePeriod';
+import { linkedin } from '../content/externalAccounts';
 import {
 	EmailLink,
+	PhoneLink,
 	SiteTitle,
 	WebsiteLink,
 } from '../content/layout';
@@ -263,7 +266,15 @@ const Resume: NextPage = () => {
 			</main>
 			<footer>
 				<address>
+					<PhoneLink className={styles.excludedForPrivacy}/>
+					<span className={styles.excludedForPrivacy}>|</span>
 					<EmailLink />
+					<span>|</span>
+					<ExternalLink
+						href={linkedin.link}
+					>
+						{linkedin.shortLink}
+					</ExternalLink>
 					<span>|</span>
 					<WebsiteLink />
 				</address>

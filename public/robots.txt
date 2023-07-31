@@ -1,0 +1,8 @@
+//robots.txt
+# Block all crawlers for /resume
+User-agent: *
+Disallow: /resume
+
+# Allow all crawlers
+User-agent: *
+Allow: /
