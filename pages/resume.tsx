@@ -58,9 +58,7 @@ const Resume: NextPage = () => {
 			<main>
 				<section className={styles.summary}>
 					<p>
-						Curious, detail-oriented software engineer with experience growing individuals and fostering collaboration.
-						Passionate about creating holistic solutions through data-first design and writing consistent, maintainable code.
-						{/* Seeking to continue growth and education through contributions to mission-driven organizations. */}
+						Leader with a track record of success in accelerating business goals, enabling new insights into performance, and supporting data-driven business strategizing by leading the end-to-end creation of powerful new tools and features.
 					</p>
 				</section>
 				<section className={styles.skills}>
