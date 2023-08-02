@@ -149,6 +149,7 @@
 						grid-template-areas:
 							"title"
 							"timePeriod"
+							"positionSummary"
 							"activities"
 						;
 
@@ -157,7 +158,10 @@
 							display: inline-block;
 							margin: 0;
 							font-style: italic;
-							font-weight: normal;
+						}
+						.positionSummary {
+							grid-area: positionSummary;
+							margin-bottom: 0;
 						}
 						.activities {
 							grid-area: activities;
@@ -187,6 +191,7 @@
 							margin: 0;
 							grid-template-areas:
 								"title timePeriod"
+								"positionSummary positionSummary"
 								"activities activities"
 							;
 						}

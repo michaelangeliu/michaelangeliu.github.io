@@ -145,7 +145,7 @@ const Resume: NextPage = () => {
 
 				</section>
 				<section className={styles.experiences}>
-					<h2>Experiences</h2>
+					<h2>Professional Experiences</h2>
 					{experiences
 						.map((experience, index) => {
 							const {
@@ -185,13 +185,14 @@ const Resume: NextPage = () => {
 															startDateTime={position.startDate}
 														/>
 													</span>
+													<p className={styles.positionSummary}>{position.summary}</p>
 													<ul className={styles.activities}>
 														{position.activities
 															?.map((activity, index) => {
 																const {
 																	summary,
 																	details = [],
-																} = activity;
+																} = activity as PositionActivity;
 
 																return (
 																	<li key={index}>
