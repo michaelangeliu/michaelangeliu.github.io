@@ -67,14 +67,16 @@ const Resume: NextPage = () => {
 					<h2>Skills</h2>
 					<ul>
 						<li>
-							<h3 className={styles.skillTypes}>Languages:</h3>
+							<h3 className={styles.skillTypes}>Management/Organizational:</h3>
 							<ul className={styles.commaList}>
-								<li>Javascript/Typescript</li>
-								<li>MySQL</li>
-								<li>PHP</li>
-								<li>Python</li>
-								<li>HTML</li>
-								<li>CSS/Less/Sass</li>
+								<li>Team Leadership/Building</li>
+								<li>Project Management</li>
+								<li>Agile/Scrum/KanBan</li>
+								<li>Software Development Life Cycle (SDLC)</li>
+								<li>Refactoring</li>
+								<li>Technical Writing</li>
+								<li>Mentorship/Sponsorship</li>
+								<li>Software Architecture</li>
 							</ul>
 						</li>
 						<li>
@@ -87,6 +89,7 @@ const Resume: NextPage = () => {
 								<li>Babel</li>
 								<li>ESLint</li>
 								<li>Next</li>
+								<li>Docker</li>
 								<li>Node</li>
 								<li>Fivetran</li>
 								<li>DBT</li>
@@ -94,53 +97,20 @@ const Resume: NextPage = () => {
 								<li>Tableau</li>
 								<li>Cypress</li>
 								<li>Jest</li>
-								<li>AWS (
-									<ul className={styles.commaList}>
-										<li>DMS</li>
-										<li>Redshift</li>
-										<li>DynamoDB</li>
-										<li>S3</li>
-										<li>Lambda</li>
-										<li>Batch</li>
-										{/* <li>RDS</li> */}
-										{/* <li>Cloudwatch Events</li> */}
-										{/* <li>EC2</li> */}
-									</ul>
-								)
-								</li>
+								<li>AWS</li>
 							</ul>
 						</li>
 						<li>
-							<h3 className={styles.skillTypes}>Other:</h3>
+							<h3 className={styles.skillTypes}>Languages:</h3>
 							<ul className={styles.commaList}>
-								<li>Agile Software Development</li>
-								<li>Mentorship/Sponsorship</li>
-								<li>Refactoring</li>
-								<li>Software Architecture</li>
-								<li>Technical Project Management</li>
-								<li>Technical Writing</li>
-								{/* <li>Team Building</li> */}
-								{/* <li>Communication</li> */}
-								{/* <li>Collaboration</li> */}
-								{/* <li>Growth Mindset</li> */}
-								<li>Speedcubing</li>
+								<li>Javascript/Typescript</li>
+								<li>MySQL</li>
+								<li>PHP</li>
+								<li>Python</li>
+								<li>HTML</li>
+								<li>CSS/Less/Sass</li>
 							</ul>
 						</li>
-						{/* <li>
-							<h3 className={styles.skillTypes}>Prior Experience/Basic Knowledge:</h3>
-							<ul className={styles.commaList}>
-								<li>Rust</li>
-								<li>Docker</li>
-								<li>Ruby on Rails</li>
-								<li>Symfony</li>
-								<li>Doctrine</li>
-								<li>Express</li>
-								<li>Angular</li>
-								<li>MongoDB</li>
-								<li>Java</li>
-								<li>C++</li>
-							</ul>
-						</li> */}
 					</ul>
 
 				</section>
