@@ -170,7 +170,7 @@ const Resume: NextPage = () => {
 										<TimePeriod
 											startDateTime={employmentStartDate}
 											endDateTime={employmentEndDate}
-											dateTimeFormat="MMM yyyy"
+											dateTimeFormat="MMMM yyyy"
 										/>
 									</span>
 									<ul className={styles.positions}>
@@ -180,7 +180,7 @@ const Resume: NextPage = () => {
 													<h4 className={styles.title}>{position.title}</h4>
 													<span className={styles.timePeriod}>
 														<TimePeriod
-															dateTimeFormat="MMM yyyy"
+															dateTimeFormat="MMMM yyyy"
 															endDateTime={position.endDate}
 															startDateTime={position.startDate}
 														/>
