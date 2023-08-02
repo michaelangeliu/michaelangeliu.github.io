@@ -106,6 +106,9 @@
 								"Constructed OLAP data models to facilitate data analysis in Redshift and Tableau",
 								"Implemented a Tableau embed and built custom dashboards for internal and external use"
 							]
+						},
+						{
+							"summary": "Redesigned transactional database occupancy tracking models to improve data accuracy"
 						}
 					]
 				},
@@ -146,6 +149,7 @@
 							"summary": "Planned and upgraded React from v15 to v16 to take advantage of hooks and other more modern libraries",
 							"details": [
 								"Upgraded Webpack from v3 to v5 to improve build speed by 30%",
+								"Reduced bundle size by 30%",
 								"Implemented Husky to run ESLint and basic code quality checks on staged file"
 							]
 						}
