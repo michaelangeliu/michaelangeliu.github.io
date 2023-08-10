@@ -35,6 +35,7 @@ const Resume: NextPage = () => {
 
 			<header>
 				<SiteTitle />
+				<h2 className={styles.newPosition}>NEW_POSITION</h2>
 			</header>
 			<main>
 				<section className={styles.summary}>
