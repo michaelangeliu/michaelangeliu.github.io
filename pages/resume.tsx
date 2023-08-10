@@ -16,7 +16,7 @@ import data from '../content/resume_data.json';
 import styles from './resume.module.scss';
 
 import type {
-	Position,
+	PositionActivity,
 } from '../types/resume';
 
 const Resume: NextPage = () => {
@@ -24,25 +24,6 @@ const Resume: NextPage = () => {
 		certifications,
 		experiences,
 	} = data;
-
-	const getEmploymentStartDate = (positions: Array<Position>) => (positions
-		.reduce((firstDate, position) => {
-			return (position.startDate < firstDate)
-				? position.startDate
-				: firstDate;
-		}, DateTime.now().toISODate()));
-
-	const getEmploymentEndDate = (
-		positions: Array<Position>,
-		employmentStartDate: string
-	) => (positions
-		.reduce((lastDate, position) => {
-			return (!position.endDate)
-				? ''
-				: (position.endDate > lastDate)
-					? position.endDate
-					: lastDate;
-		}, employmentStartDate));
 
 	return (
 		<div className={styles.resume}>
@@ -117,35 +98,29 @@ const Resume: NextPage = () => {
 					{experiences
 						.map((experience, index) => {
 							const {
+								location,
+								organization,
 								positions,
 							} = experience;
-
-							const employmentStartDate = getEmploymentStartDate(positions);
-							const employmentEndDate = getEmploymentEndDate(positions, employmentStartDate);
 
 							return (
 								<article
 									className={styles.experience}
 									key={index}
 								>
-									<h3 className={styles.organization}>
-										{experience.organization}
-									</h3>
-									<span className={styles.location}>
-										{experience.location}
-									</span>
-									<span className={styles.timePeriod}>
-										<TimePeriod
-											startDateTime={employmentStartDate}
-											endDateTime={employmentEndDate}
-											dateTimeFormat="MMMM yyyy"
-										/>
-									</span>
 									<ul className={styles.positions}>
-										{experience.positions
+										{positions
 											.map((position) => (
 												<li key={position.title}>
-													<h4 className={styles.title}>{position.title}</h4>
+													<h3 className={styles.title}>
+														{position.title}
+														<span className={styles.organization}>
+															@&nbsp;{organization}
+														</span>
+														<span className={styles.location}>
+															({location})
+														</span>
+													</h3>
 													<span className={styles.timePeriod}>
 														<TimePeriod
 															dateTimeFormat="MMMM yyyy"

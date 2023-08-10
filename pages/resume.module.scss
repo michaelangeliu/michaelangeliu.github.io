@@ -114,30 +114,8 @@
 
 			article.experience {
 				position: relative;
-				display: grid;
-				grid-template-areas:
-					"organization organization"
-					"location timePeriod"
-					"positions positions"
-				;
 
-				h3.organization {
-					grid-area: organization;
-					margin: 0;
-					display: inline-block;
-					em {
-						font-weight: normal;
-					}
-				}
-				.timePeriod {
-					grid-area: timePeriod;
-					text-align: right;
-				}
-				.location {
-					grid-area: location;
-				}
 				.positions {
-					grid-area: positions;
 					margin: 0;
 					margin-left: 0.5em;
 					margin-bottom: 0.25em;
@@ -152,12 +130,32 @@
 							"positionSummary"
 							"activities"
 						;
+						&:not(:last-of-type) {
+							margin-bottom: 0.5em;
+						}
 
-						h4.title {
+						h3.title {
 							grid-area: title;
 							display: inline-block;
 							margin: 0;
-							font-style: italic;
+							font-weight: bold;
+
+							.organization,
+							.location {
+								margin: 0;
+								margin-left: 0.25em;
+								display: inline-block;
+								font-size: 1em;
+								font-weight: normal;
+							}
+
+							.location {
+								display: none;
+							}
+						}
+						.timePeriod {
+							grid-area: timePeriod;
+							text-align: right;
 						}
 						.positionSummary {
 							grid-area: positionSummary;
@@ -180,12 +178,6 @@
 				}
 
 				@include media-query($size-sm) {
-					grid-template-areas:
-						"organization timePeriod"
-						"location location"
-						"positions positions"
-					;
-
 					ul.positions {
 						li {
 							margin: 0;
@@ -194,6 +186,7 @@
 								"positionSummary positionSummary"
 								"activities activities"
 							;
+							grid-template-columns: 2fr 1fr;
 						}
 					}
 				}
