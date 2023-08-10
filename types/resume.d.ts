@@ -12,6 +12,7 @@ export type PositionActivity = {
 
 export type Position = {
 	title: string,
+	summary: string,
 	startDate: string, // TODO date
 	endDate: ?string, // TODO date
 	activities: ?Array<PositionActivity>,

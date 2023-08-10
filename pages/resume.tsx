@@ -2,9 +2,12 @@ import { DateTime } from 'luxon';
 import { NextPage } from 'next';
 import Head from 'next/head';
 
+import ExternalLink from '../components/ExternalLink';
 import TimePeriod from '../components/TimePeriod';
+import { linkedin } from '../content/externalAccounts';
 import {
 	EmailLink,
+	PhoneLink,
 	SiteTitle,
 	WebsiteLink,
 } from '../content/layout';
@@ -13,7 +16,7 @@ import data from '../content/resume_data.json';
 import styles from './resume.module.scss';
 
 import type {
-	Position,
+	PositionActivity,
 } from '../types/resume';
 
 const Resume: NextPage = () => {
@@ -21,25 +24,6 @@ const Resume: NextPage = () => {
 		certifications,
 		experiences,
 	} = data;
-
-	const getEmploymentStartDate = (positions: Array<Position>) => (positions
-		.reduce((firstDate, position) => {
-			return (position.startDate < firstDate)
-				? position.startDate
-				: firstDate;
-		}, DateTime.now().toISODate()));
-
-	const getEmploymentEndDate = (
-		positions: Array<Position>,
-		employmentStartDate: string
-	) => (positions
-		.reduce((lastDate, position) => {
-			return (!position.endDate)
-				? ''
-				: (position.endDate > lastDate)
-					? position.endDate
-					: lastDate;
-		}, employmentStartDate));
 
 	return (
 		<div className={styles.resume}>
@@ -51,27 +35,28 @@ const Resume: NextPage = () => {
 
 			<header>
 				<SiteTitle />
+				<h2 className={styles.newPosition}>NEW_POSITION</h2>
 			</header>
 			<main>
 				<section className={styles.summary}>
 					<p>
-						Curious, detail-oriented software engineer with experience growing individuals and fostering collaboration.
-						Passionate about creating holistic solutions through data-first design and writing consistent, maintainable code.
-						{/* Seeking to continue growth and education through contributions to mission-driven organizations. */}
+						Leader with a track record of success in accelerating business goals, enabling new insights into performance, and supporting data-driven business strategizing by leading the end-to-end creation of powerful new tools and features.
 					</p>
 				</section>
 				<section className={styles.skills}>
 					<h2>Skills</h2>
 					<ul>
 						<li>
-							<h3 className={styles.skillTypes}>Languages:</h3>
+							<h3 className={styles.skillTypes}>Management/Organizational:</h3>
 							<ul className={styles.commaList}>
-								<li>Javascript/Typescript</li>
-								<li>MySQL</li>
-								<li>PHP</li>
-								<li>Python</li>
-								<li>HTML</li>
-								<li>CSS/Less/Sass</li>
+								<li>Team Leadership/Building</li>
+								<li>Project Management</li>
+								<li>Agile/Scrum/KanBan</li>
+								<li>Software Development Life Cycle (SDLC)</li>
+								<li>Refactoring</li>
+								<li>Technical Writing</li>
+								<li>Mentorship/Sponsorship</li>
+								<li>Software Architecture</li>
 							</ul>
 						</li>
 						<li>
@@ -84,6 +69,7 @@ const Resume: NextPage = () => {
 								<li>Babel</li>
 								<li>ESLint</li>
 								<li>Next</li>
+								<li>Docker</li>
 								<li>Node</li>
 								<li>Fivetran</li>
 								<li>DBT</li>
@@ -91,104 +77,66 @@ const Resume: NextPage = () => {
 								<li>Tableau</li>
 								<li>Cypress</li>
 								<li>Jest</li>
-								<li>AWS (
-									<ul className={styles.commaList}>
-										<li>DMS</li>
-										<li>Redshift</li>
-										<li>DynamoDB</li>
-										<li>S3</li>
-										<li>Lambda</li>
-										<li>Batch</li>
-										{/* <li>RDS</li> */}
-										{/* <li>Cloudwatch Events</li> */}
-										{/* <li>EC2</li> */}
-									</ul>
-								)
-								</li>
+								<li>AWS</li>
 							</ul>
 						</li>
 						<li>
-							<h3 className={styles.skillTypes}>Other:</h3>
+							<h3 className={styles.skillTypes}>Languages:</h3>
 							<ul className={styles.commaList}>
-								<li>Agile Software Development</li>
-								<li>Mentorship/Sponsorship</li>
-								<li>Refactoring</li>
-								<li>Software Architecture</li>
-								<li>Technical Project Management</li>
-								<li>Technical Writing</li>
-								{/* <li>Team Building</li> */}
-								{/* <li>Communication</li> */}
-								{/* <li>Collaboration</li> */}
-								{/* <li>Growth Mindset</li> */}
-								<li>Speedcubing</li>
+								<li>Javascript/Typescript</li>
+								<li>MySQL</li>
+								<li>PHP</li>
+								<li>Python</li>
+								<li>HTML</li>
+								<li>CSS/Less/Sass</li>
 							</ul>
 						</li>
-						{/* <li>
-							<h3 className={styles.skillTypes}>Prior Experience/Basic Knowledge:</h3>
-							<ul className={styles.commaList}>
-								<li>Rust</li>
-								<li>Docker</li>
-								<li>Ruby on Rails</li>
-								<li>Symfony</li>
-								<li>Doctrine</li>
-								<li>Express</li>
-								<li>Angular</li>
-								<li>MongoDB</li>
-								<li>Java</li>
-								<li>C++</li>
-							</ul>
-						</li> */}
 					</ul>
 
 				</section>
 				<section className={styles.experiences}>
-					<h2>Experiences</h2>
+					<h2>Professional Experiences</h2>
 					{experiences
 						.map((experience, index) => {
 							const {
+								location,
+								organization,
 								positions,
 							} = experience;
-
-							const employmentStartDate = getEmploymentStartDate(positions);
-							const employmentEndDate = getEmploymentEndDate(positions, employmentStartDate);
 
 							return (
 								<article
 									className={styles.experience}
 									key={index}
 								>
-									<h3 className={styles.organization}>
-										{experience.organization}
-									</h3>
-									<span className={styles.location}>
-										{experience.location}
-									</span>
-									<span className={styles.timePeriod}>
-										<TimePeriod
-											startDateTime={employmentStartDate}
-											endDateTime={employmentEndDate}
-											dateTimeFormat="MMM yyyy"
-										/>
-									</span>
 									<ul className={styles.positions}>
-										{experience.positions
+										{positions
 											.map((position) => (
 												<li key={position.title}>
-													<h4 className={styles.title}>{position.title}</h4>
+													<h3 className={styles.title}>
+														{position.title}
+														<span className={styles.organization}>
+															@&nbsp;{organization}
+														</span>
+														<span className={styles.location}>
+															({location})
+														</span>
+													</h3>
 													<span className={styles.timePeriod}>
 														<TimePeriod
-															dateTimeFormat="MMM yyyy"
+															dateTimeFormat="MMMM yyyy"
 															endDateTime={position.endDate}
 															startDateTime={position.startDate}
 														/>
 													</span>
+													<p className={styles.positionSummary}>{position.summary}</p>
 													<ul className={styles.activities}>
 														{position.activities
 															?.map((activity, index) => {
 																const {
 																	summary,
 																	details = [],
-																} = activity;
+																} = activity as PositionActivity;
 
 																return (
 																	<li key={index}>
@@ -263,7 +211,15 @@ const Resume: NextPage = () => {
 			</main>
 			<footer>
 				<address>
+					<PhoneLink className={styles.excludedForPrivacy}/>
+					<span className={styles.excludedForPrivacy}>|</span>
 					<EmailLink />
+					<span>|</span>
+					<ExternalLink
+						href={linkedin.link}
+					>
+						{linkedin.shortLink}
+					</ExternalLink>
 					<span>|</span>
 					<WebsiteLink />
 				</address>

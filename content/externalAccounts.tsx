@@ -10,43 +10,56 @@ import TwitterLogo from '../public/static/images/social-icons/twitter.svg';
 import type { ExternalAccount } from '../types/externalAccount';
 // import TumblrLogo from '../public/static/images/social-icons/tumblr.svg';
 
+export const linkedin = {
+	icon: <LinkedinLogo className="social-icon" />,
+	link: 'https://www.linkedin.com/in/michaelangeliu',
+	shortLink: 'linkedin.com/in/michaelangeliu',
+	title: 'LinkedIn',
+	type: 'linkedin',
+};
+
+export const github = {
+	icon: <GithubLogo className="social-icon" />,
+	link: 'https://github.com/michaelangeliu',
+	title: 'GitHub',
+	type: 'github',
+};
+
+export const facebook = {
+	icon: <FacebookLogo className="social-icon" />,
+	link: 'https://www.facebook.com/michaelangeliu',
+	title: 'Facebook',
+	type: 'facebook',
+};
+
+export const instagram = {
+	icon: <InstagramLogo className="social-icon" />,
+	link: 'https://instagram.com/michaelangeliu',
+	title: 'Instagram',
+	type: 'instagram',
+};
+
+export const twitter = {
+	icon: <TwitterLogo className="social-icon" />,
+	link: 'https://twitter.com/michaelangeliu',
+	title: 'Twitter',
+	type: 'twitter',
+};
+
+// export const tumblr = {
+// 	icon: <TumblrLogo />,
+// 	link: 'https://michaelangeliu.tumblr.com',
+// 	title: 'Tumblr',
+// 	type: 'tumblr',
+// };
+
 export const socialMediaAccounts: Array<ExternalAccount> = [
-	{
-		icon: <LinkedinLogo className="social-icon" />,
-		link: 'https://www.linkedin.com/in/michael-liu-a7389372',
-		title: 'LinkedIn',
-		type: 'linkedin',
-	},
-	{
-		icon: <GithubLogo className="social-icon" />,
-		link: 'https://github.com/michaelangeliu',
-		title: 'GitHub',
-		type: 'github',
-	},
-	{
-		icon: <FacebookLogo className="social-icon" />,
-		link: 'https://www.facebook.com/michaelangeliu',
-		title: 'Facebook',
-		type: 'facebook',
-	},
-	{
-		icon: <InstagramLogo className="social-icon" />,
-		link: 'https://instagram.com/michaelangeliu',
-		title: 'Instagram',
-		type: 'instagram',
-	},
-	{
-		icon: <TwitterLogo className="social-icon" />,
-		link: 'https://twitter.com/michaelangeliu',
-		title: 'Twitter',
-		type: 'twitter',
-	},
-	// {
-	//   icon: <TumblrLogo />,
-	//   link: 'https://michaelangeliu.tumblr.com',
-	//   title: 'Tumblr',
-	//   type: 'tumblr',
-	// },
+	linkedin,
+	github,
+	facebook,
+	instagram,
+	twitter,
+	// tumblr,
 ];
 
 export const certifications: Array<ExternalAccount> = [

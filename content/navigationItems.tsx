@@ -5,10 +5,10 @@ export const navigationItems: Array<NavigationItem> = [
 		content: 'Home',
 		href: '/',
 	},
-	// {
-	// 	content: 'About',
-	// 	href: '/about',
-	// },
+	{
+		content: 'About',
+		href: '/about',
+	},
 	{
 		content: 'Certifications',
 		href: '/certifications',

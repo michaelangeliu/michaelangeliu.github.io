@@ -1,5 +1,15 @@
 @use '../styles/variables' as *;
 
+.excludedForPrivacy {
+	position: absolute;
+	display: none !important; // To override any other displays
+
+	@media print {
+		position: unset;
+		display: unset !important;
+	}
+}
+
 .resume {
 	display: grid;
 	grid-template-rows: auto 1fr auto;
@@ -24,6 +34,10 @@
 		text-align: center;
 		h1 {
 			font-size: 2em;
+		}
+
+		h2.newPosition {
+			display: none;
 		}
 	}
 
@@ -96,7 +110,7 @@
 				display: inline-block;
 				margin-bottom: 0;
 				margin-right: 0.25em;
-				font-size: 1rem;
+				font-size: 1em;
 			}
 		}
 		.experiences {
@@ -104,30 +118,8 @@
 
 			article.experience {
 				position: relative;
-				display: grid;
-				grid-template-areas:
-					"organization organization"
-					"location timePeriod"
-					"positions positions"
-				;
 
-				h3.organization {
-					grid-area: organization;
-					margin: 0;
-					display: inline-block;
-					em {
-						font-weight: normal;
-					}
-				}
-				.timePeriod {
-					grid-area: timePeriod;
-					text-align: right;
-				}
-				.location {
-					grid-area: location;
-				}
 				.positions {
-					grid-area: positions;
 					margin: 0;
 					margin-left: 0.5em;
 					margin-bottom: 0.25em;
@@ -139,15 +131,39 @@
 						grid-template-areas:
 							"title"
 							"timePeriod"
+							"positionSummary"
 							"activities"
 						;
+						&:not(:last-of-type) {
+							margin-bottom: 0.5em;
+						}
 
-						h4.title {
+						h3.title {
 							grid-area: title;
 							display: inline-block;
 							margin: 0;
-							font-style: italic;
-							font-weight: normal;
+							font-weight: bold;
+
+							.organization,
+							.location {
+								margin: 0;
+								margin-left: 0.25em;
+								display: inline-block;
+								font-size: 1em;
+								font-weight: normal;
+							}
+
+							.location {
+								display: none;
+							}
+						}
+						.timePeriod {
+							grid-area: timePeriod;
+							text-align: right;
+						}
+						.positionSummary {
+							grid-area: positionSummary;
+							margin-bottom: 0;
 						}
 						.activities {
 							grid-area: activities;
@@ -166,19 +182,15 @@
 				}
 
 				@include media-query($size-sm) {
-					grid-template-areas:
-						"organization timePeriod"
-						"location location"
-						"positions positions"
-					;
-
 					ul.positions {
 						li {
 							margin: 0;
 							grid-template-areas:
 								"title timePeriod"
+								"positionSummary positionSummary"
 								"activities activities"
 							;
+							grid-template-columns: 2fr 1fr;
 						}
 					}
 				}
@@ -246,10 +258,37 @@
 
 		header {
 			margin-bottom: 0.5em;
+			display: flex;
+			justify-content: space-between;
+
+			h1 {
+				display: inline-block;
+			}
+
+			h2.newPosition {
+				display: inline-block;
+			}
+		}
+
+		main {
+			.summary {
+				text-align: left;
+			}
+
+			.location {
+				display: none;
+			}
+
+			h2 {
+				text-align: left;
+			}
 		}
 
 		footer {
 			margin-bottom: 0.5em;
+			address {
+				justify-content: flex-start;
+			}
 		}
 	}
 }
