@@ -258,16 +258,37 @@
 
 		header {
 			margin-bottom: 0.5em;
+			display: flex;
+			justify-content: space-between;
+
+			h1 {
+				display: inline-block;
+			}
+
+			h2.newPosition {
+				display: inline-block;
+			}
 		}
 
 		main {
+			.summary {
+				text-align: left;
+			}
+
 			.location {
 				display: none;
+			}
+
+			h2 {
+				text-align: left;
 			}
 		}
 
 		footer {
 			margin-bottom: 0.5em;
+			address {
+				justify-content: flex-start;
+			}
 		}
 	}
 }
